@@ -1,4 +1,29 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>श्रीराम चॅरिटेबल ट्रस्ट</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <p id="translatedText">लवकरच येत आहे..!</p>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'mr', includedLanguages: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+          'translatedText'
+        );
+      }
+    </script>
+  </body>
+</html>
+ -->
+
+ <!DOCTYPE html>
 <html lang="mr">
   <head>
     <meta charset="UTF-8" />
@@ -11,15 +36,35 @@
   <body>
     <p id="translatedText">लवकरच येत आहे..!</p>
 
-    <!-- Include the Google Translate API -->
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <button onclick="translateToEnglish()">Translate to English</button>
 
     <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          { pageLanguage: 'mr', includedLanguages: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
-          'translatedText'
-        );
+      function translateToEnglish() {
+        const textToTranslate = document.getElementById('translatedText').textContent;
+        const targetLanguage = 'en';
+        const apiKey = 'YOUR_GOOGLE_TRANSLATE_API_KEY'; // Replace with your actual API key
+
+        const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+        const data = {
+          q: textToTranslate,
+          target: targetLanguage,
+        };
+
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        })
+          .then((response) => response.json())
+          .then((translatedData) => {
+            const translatedText = translatedData.data.translations[0].translatedText;
+            document.getElementById('translatedText').textContent = translatedText;
+          })
+          .catch((error) => {
+            console.log('Translation error:', error);
+          });
       }
     </script>
   </body>
