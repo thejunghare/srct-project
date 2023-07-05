@@ -23,7 +23,7 @@
 </html>
  -->
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="mr">
   <head>
     <meta charset="UTF-8" />
@@ -31,7 +31,7 @@
     <!-- Title -->
     <title>श्रीराम चॅरिटेबल ट्रस्ट</title>
     <!-- External css -->
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <p id="translatedText">लवकरच येत आहे..!</p>
@@ -40,9 +40,10 @@
 
     <script type="text/javascript">
       function translateToEnglish() {
-        const textToTranslate = document.getElementById('translatedText').textContent;
-        const targetLanguage = 'en';
-        const apiKey = 'YOUR_GOOGLE_TRANSLATE_API_KEY'; // Replace with your actual API key
+        const textToTranslate =
+          document.getElementById("translatedText").textContent;
+        const targetLanguage = "en";
+        const apiKey = "YOUR_GOOGLE_TRANSLATE_API_KEY"; // Replace with your actual API key
 
         const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
         const data = {
@@ -51,19 +52,21 @@
         };
 
         fetch(url, {
-          method: 'POST',
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
         })
           .then((response) => response.json())
           .then((translatedData) => {
-            const translatedText = translatedData.data.translations[0].translatedText;
-            document.getElementById('translatedText').textContent = translatedText;
+            const translatedText =
+              translatedData.data.translations[0].translatedText;
+            document.getElementById("translatedText").textContent =
+              translatedText;
           })
           .catch((error) => {
-            console.log('Translation error:', error);
+            console.log("Translation error:", error);
           });
       }
     </script>
