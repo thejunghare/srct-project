@@ -21,104 +21,52 @@ li {
   list-style-type: none;
 }
 
-body {
-  min-height: 100vh;
-  margin: 0 auto;
-  max-width: 400px;
-  font-family: "Satoshi", sans-serif;
-}
-
-.header {
-  /* border: 2px solid red; */
-  height: 50px;
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.075) 0 1px;
-  padding: 15px;
-}
-
-.sidebar {
-  /* border: 2px solid black; */
-  position: fixed;
-  width: 100vw;
-  z-index: 1;
-  top: 0;
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
   left: 0;
-  background: #fff;
-  color: black;
-  min-height: 100vh;
-  /* display: none; */
-  overflow-x: hidden;
-  /* opacity: 0; */
-  transition: 0.5s;
-  text-align: center;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.close {
-  /* border: 2px solid red; */
-  text-align: center;
-  padding: 10px 20px;
-  text-align: right;
-  cursor: pointer;
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.icon {
-  vertical-align: middle;
-  font-size: 18px;
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-.list-item {
-  /* border: 2px solid purple; */
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 4px;
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-.list-item:hover {
-  background: #e5e5e5;
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
 
-.link {
-  font-family: var(--font);
-  font-size: 14px;
-  font-weight: 500;
-  color: black;
-  line-height: 1.7;
-  letter-spacing: 1.5px;
-}
-
-#icon {
-  cursor: pointer;
-}
-
-/* Responsive design */
-
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
-  body {
-    min-width: 100vw;
-  }
-}
-
-/* Media queries for Tablet ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    min-width: 100vw;
-  }
-}
-
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  body {
-    min-width: 100vw;
-  }
-}
-
-/* Media query for large screens */
-@media (min-width: 1281px) {
-  body {
-    min-width: 100vw;
-  }
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
