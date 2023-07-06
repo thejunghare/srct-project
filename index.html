@@ -8,36 +8,91 @@
     <!-- External css -->
     <link rel="stylesheet" href="./index.css" />
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_io/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon_io/favicon-16x16.png"
+    />
     <link rel="manifest" href="/img/favicon_io/site.webmanifest" />
   </head>
   <body>
+    <!-- Navbar -->
     <div class="header">
-      <div class="header-menu-title">
-        <h3>श्रीराम चॅरिटेबल ट्रस्ट</h3>
-      </div>
-      <div class="header-menu-links">
-        <ul class="menu-links">
-          <li>
-            <a href="">बद्दल</a>
-          </li>
-          <li>
-            <a href="">कार्यक्रम</a>
-          </li>
-          <li>
-            <a href="">संपर्क</a>
-          </li>
-          <li>
-            <a href="">सदस्य नोंदणी</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-menu-buttons">
-        <button>दान करा</button>
-      </div>
+      <svg id="icon" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M4.75 5.75H19.25"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M4.75 18.25H19.25"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M4.75 12H19.25"
+        ></path>
+      </svg>
+      <a href="#" class="link">श्रीराम चॅरिटेबल ट्रस्ट</a>
     </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="menu">
+      <div class="close">
+        <span id="close-icon">
+          <ion-icon name="close-circle-outline"></ion-icon>
+        </span>
+      </div>
+      <ul class="list">
+        <li class="list-item">
+          <a href="#" class="link">बद्दल</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">सदस्य</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">सामील व्हा</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">दान </a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">संपर्क</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- External Js -->
+    <script src="./index.js"></script>
+    <!-- ionicons useage link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
     <!-- <button onclick="translateToEnglish()">Translate to English</button> -->
 
