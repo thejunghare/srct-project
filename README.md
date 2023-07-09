@@ -6,12 +6,12 @@ This repository contains the code for श्रीराम चॅरिटे�
 
 The श्रीराम चॅरिटेबल ट्रस्ट website is designed to promote a specific cause and encourage visitors to contribute to the cause through donations or volunteering. The website includes the following sections:
 
-1. About Us: Information about the charitable organization, its mission, and the cause it supports.
-2. Our Work: Details about the projects, initiatives, and campaigns undertaken by the organization to make a difference.
-3. Get Involved: Opportunities for users to get involved, such as volunteering, fundraising events, or other forms of support.
-4. Donations: Information on how users can contribute financially to the cause, including various donation methods and payment options.
-5. Impact: Stories, testimonials, and statistics showcasing the impact and outcomes achieved through the collective efforts of the organization and its supporters.
-6. Contact Us: Contact information and a form for users to reach out with inquiries, feedback, or requests for further involvement.
+- **About Us**: Information about the charitable organization, its mission, and the cause it supports.
+- **Our Work**: Details about the projects, initiatives, and campaigns undertaken by the organization to make a difference.
+- **Get Involved**: Opportunities for users to get involved, such as volunteering, fundraising events, or other forms of support.
+- **Donations**: Information on how users can contribute financially to the cause, including various donation methods and payment options.
+- **Impact**: Stories, testimonials, and statistics showcasing the impact and outcomes achieved through the collective efforts of the organization and its supporters.
+- **Contact U**s: Contact information and a form for users to reach out with inquiries, feedback, or requests for further involvement.
 
 ## Contributing
 
