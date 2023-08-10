@@ -1718,7 +1718,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
  */
 .custom-site-logo{
-    width: 250%!important;
+    /* width: 250%!important; */
 }
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -1824,7 +1824,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__buttons {
-    padding-top: 6rem;
+    /* padding-top: 6rem; */
     text-align: left;
 }
 
