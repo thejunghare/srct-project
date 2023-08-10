@@ -1714,6 +1714,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* 
+
+ */
+.custom-site-logo{
+    width: 250%!important;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * header
