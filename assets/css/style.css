@@ -157,7 +157,7 @@ h2:after {
  SLIDER SECTION
     ===================================*/
 #carousel-slider {
-  border: 3px double #e47474;
+  /* border: 3px double #e47474; */
 }
 /* navigation icon style*/
 .control-icon {
