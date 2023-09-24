@@ -1,5 +1,7 @@
 ## श्रीराम चॅरिटेबल ट्रस्ट
 
+srct.netlify.app
+
 This repository contains the code for श्रीराम चॅरिटेबल ट्रस्ट website. The website serves as a platform to raise awareness, accept donations, and support a charitable cause. It aims to provide information about the cause, engage users, and facilitate contributions to make a positive impact on society.
 
 ## About the Website
